@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inspeção de Vazamentos - Protótipo</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Inspeção de Vazamentos - Protótipo</h1>
+  </header>
+
+  <main>
+    <section class="left">
+      <h2>Registrar inspeção</h2>
+      <form id="formInspection">
+        <input name="created_by" placeholder="Seu nome (opcional)" />
+        <input name="department" placeholder="Departamento" required />
+        <input name="section" placeholder="Sessão / Seção" />
+        <input name="location" placeholder="Local" />
+        <input name="machine_id" placeholder="Máquina (id)" />
+        <input name="sensor_value" placeholder="Leitura sensor (dB)" type="number" step="any" />
+        <input name="estimated_loss" placeholder="Estimativa perda (m3/min)" type="number" step="any" />
+        <textarea name="note" placeholder="Legenda / Observação"></textarea>
+        <input name="photo" type="file" accept="image/*" />
+        <button type="submit">Salvar inspeção</button>
+      </form>
+
+      <h2>Lista de inspeções</h2>
+      <div id="inspectionsList"></div>
+    </section>
+
+    <section class="right">
+      <h2>Dashboard</h2>
+      <canvas id="chart" width="400" height="300"></canvas>
+      <div id="stats"></div>
+      <button id="refreshBtn">Atualizar</button>
+    </section>
+  </main>
+
+  <footer>
+    <small>Protótipo — desenvolva e adapte conforme necessário.</small>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

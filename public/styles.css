@@ -1,0 +1,14 @@
+/* estilos simples */
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; color:#222; }
+header { background:#2b6cb0; color:white; padding:16px; }
+main { display:flex; gap:16px; padding:16px; }
+.left { flex: 1.2; background:white; padding:12px; border-radius:6px; }
+.right { flex: 0.9; background:white; padding:12px; border-radius:6px; }
+form input, form textarea { width:100%; margin:6px 0; padding:8px; box-sizing:border-box; }
+button { background:#2b6cb0; color:white; border:none; padding:8px 12px; border-radius:4px; cursor:pointer; }
+.inspection { border-bottom:1px solid #eee; padding:8px 0; display:flex; gap:12px; align-items:center; }
+.inspection img { width:100px; height:70px; object-fit:cover; border-radius:4px; }
+.inspection .meta { flex:1; }
+small.gray { color:#666; }
+#stats { margin-top:12px; }
+footer { padding:12px; text-align:center; color:#666; }
