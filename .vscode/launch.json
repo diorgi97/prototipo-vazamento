@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Server",
+      "program": "${workspaceFolder}/server.js",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "node",
+      "env": { "PORT": "3000" },
+      "console": "integratedTerminal"
+    }
+  ]
+}
